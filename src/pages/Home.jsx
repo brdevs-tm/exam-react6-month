@@ -9,6 +9,7 @@ import FAQ from "../components/FAQ";
 import PremiumPlan from "../components/PremiumPlan";
 
 const Home = () => {
+  document.title = "Home";
   return (
     <Fragment>
       <main className="overflow-hidden">
