@@ -1,8 +1,6 @@
 import React, { Fragment } from "react";
-import Header from "../components/Header";
 import HomeMain from "../components/HomeMain";
-import Slider from "react-slick";
-import { FreeTrial, LeftArrow, RightArrow } from "../assets/Icons";
+import { LeftArrow, RightArrow } from "../assets/Icons";
 import CategoriesCard from "../components/CategoriesCard";
 import StreamingDevice from "../components/StreamingDevice";
 import FAQ from "../components/FAQ";
@@ -13,7 +11,9 @@ const Home = () => {
   return (
     <Fragment>
       <main className="overflow-hidden">
-        <HomeMain />
+        <div className="flex">
+          <HomeMain />
+        </div>
         <div className="explore-categories container mt-48 flex flex-col gap-10">
           <div className="categories-header flex items-center justify-between ">
             <div className="flex flex-col gap-3">
@@ -109,13 +109,10 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="premimu-pans-row flex items-center justify-between mt-80px">
+          <div className="premimu-pans-row flex items-center justify-between mt-80px flex-wrap gap-y-5">
             <PremiumPlan />
             <PremiumPlan />
             <PremiumPlan />
-          </div>
-          <div className="free-trial container">
-            <FreeTrial />
           </div>
         </div>
       </main>

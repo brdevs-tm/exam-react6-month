@@ -18,9 +18,10 @@ module.exports = {
       },
       backgroundImage: {
         "home-header": "url('./src/assets/home-main.png')",
+        "movie-show-open": "url('./src/assets/movie-shows-open.png')",
       },
-      ...generateCustomValues("fontSize", 10, 100), // Custom font sizes from 10px to 100px
-      ...generateCustomValues("spacing", 1, 1000), // Custom spacing values from 1px to 1000px
+      ...generateCustomValues("fontSize", 10, 100),
+      ...generateCustomValues("spacing", 1, 1000),
       colors: {
         // Custom color palette
         "black-06": "#0F0F0F",
