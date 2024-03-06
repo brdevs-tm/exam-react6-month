@@ -1251,6 +1251,29 @@ const UpArrow = () => {
   );
 };
 
+const Hamburger = () => {
+  return (
+    <svg
+      width="18.000000"
+      height="12.000000"
+      viewBox="0 0 18 12"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <desc>Created with Pixso.</desc>
+      <defs />
+      <path
+        id="Vector (Stroke)"
+        d="M0 0.75C0 0.335693 0.335938 0 0.75 0L17.25 0C17.6641 0 18 0.335693 18 0.75C18 1.16431 17.6641 1.5 17.25 1.5L0.75 1.5C0.335938 1.5 0 1.16431 0 0.75ZM0 6C0 5.58569 0.335938 5.25 0.75 5.25L17.25 5.25C17.6641 5.25 18 5.58569 18 6C18 6.41431 17.6641 6.75 17.25 6.75L0.75 6.75C0.335938 6.75 0 6.41431 0 6ZM8.25 11.25C8.25 10.8357 8.58594 10.5 9 10.5L17.25 10.5C17.6641 10.5 18 10.8357 18 11.25C18 11.6643 17.6641 12 17.25 12L9 12C8.58594 12 8.25 11.6643 8.25 11.25Z"
+        fill="#FFFFFF"
+        fill-opacity="1.000000"
+        fill-rule="evenodd"
+      />
+    </svg>
+  );
+};
+
 export {
   Logo,
   LogoText,
@@ -1283,4 +1306,5 @@ export {
   Genres,
   PlayMedia2,
   PlayMediaMain,
+  Hamburger,
 };

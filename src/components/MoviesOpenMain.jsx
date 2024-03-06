@@ -3,8 +3,8 @@ import { Like, PlayMedia, Plus, Sound } from "../assets/Icons";
 
 const MoviesOpenMain = () => {
   return (
-    <div className="container bg-movie-show-open bg-no-repeat bg-contain 2xl:pt-80 xl:bg-cover xl:pt-60 lg:pt-10 lg:bg-cover">
-      <div className="movies-open-main flex flex-col items-center gap-10 mt-40 pb-90px bg-gradient-to-t from-black-08  to-transparent 2xl:pb-90px 2xl:mt-20 xl:pb-40px">
+    <div className="container bg-movie-show-open bg-no-repeat bg-cover pt-20 2xl:pt-80 xl:pt-60 lg:pt-10 ">
+      <div className="movies-open-main flex flex-col items-center gap-10 mt-20 pb-90px lg:mt-40   bg-gradient-to-t from-black-08  to-transparent 2xl:pb-90px 2xl:mt-20 xl:pb-40px">
         <span className="text-white text-38px font-semibold">
           Avengers : Endgame
         </span>
@@ -14,7 +14,7 @@ const MoviesOpenMain = () => {
           universe, no matter what consequences may be in store, and no matter
           who they face... Avenge the fallen.
         </p>
-        <div className="flex items-center gap-5 ">
+        <div className="flex items-center gap-1 md:gap-5">
           <button className="flex items-center gap-2 border-red-50 bg-red-45 px-5 py-3 rounded-md">
             <PlayMedia />
             <span className="text-white">Play Now</span>

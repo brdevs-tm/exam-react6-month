@@ -18,7 +18,7 @@ const MoviesShows = () => {
       <main>
         <div className="container">
           <MoviesOpenMain />
-          <div className="about-film grid grid-cols-[auto,520px] gap-10 mt-40">
+          <div className="about-film flex flex-col xl:grid xl:grid-cols-[auto,520px] gap-10 mt-40">
             <div className="description flex flex-col gap-5 bg-black-10 p-50px border rounded-md border-black-15">
               <h1 className="text-gray-60 text-18px">Description</h1>
               <span className="text-18px text-white">
@@ -27,7 +27,7 @@ const MoviesShows = () => {
                 rule the lands.
               </span>
             </div>
-            <div className="cast row-start-2 row-end-3 flex flex-col gap-5 bg-black-10 p-50px border rounded-md border-black-15">
+            <div className="cast xl:row-start-2 xl:row-end-3 flex flex-col gap-5 bg-black-10 p-50px border rounded-md border-black-15">
               <div className="cast-header flex items-center justify-between">
                 <h1 className="text-gray-60 text-18px">Cast</h1>
                 <div className="flex items-center gap-5">
@@ -39,7 +39,7 @@ const MoviesShows = () => {
                   </button>
                 </div>
               </div>
-              <div className="actors col-span-1 flex justify-between ">
+              <div className="actors flex flex-wrap gap-5 xl:col-span-1 flex justify-between ">
                 <img src={actor} alt="actor" />
                 <img src={actor} alt="actor" />
                 <img src={actor} alt="actor" />
@@ -50,17 +50,17 @@ const MoviesShows = () => {
                 <img src={actor} alt="actor" />
               </div>
             </div>
-            <div className="reviews row-start-3 row-end-4 flex flex-col gap-5 bg-black-10 p-50px border rounded-md border-black-15">
-              <div className="review-header flex items-center justify-between">
+            <div className="reviews xl:row-start-3 xl:row-end-4 flex flex-col gap-5 bg-black-10 p-50px border rounded-md border-black-15">
+              <div className="review-header flex flex-col items-start gap-5 md:items-center md:flex-row md:justify-between">
                 <h1 className="text-gray-60 text-18px">Reviews</h1>
                 <button className="flex items-center gap-5 bg-black-08 border border-black-15  p-14px rounded-md">
                   <Plus />
                   <span className="text-white text-18px">Add your review</span>
                 </button>
               </div>
-              <div className="reviews-row flex items-start justify-between">
+              <div className="reviews-row flex flex-col gap-5 xl:items-start xl:justify-between">
                 <div className="bg-black-06 p-20px border border-black-15 rounded-md flex flex-col gap-5">
-                  <div className="commented-person flex items-center gap-32">
+                  <div className="commented-person flex items-center gap-5 flex-col md:flex-row md:justify-between">
                     <div className="detail">
                       <span className="text-white text-20px">Hamidov</span>
                       <p className="text-gray-60 text-18px">Uzbekistan</p>
@@ -83,7 +83,7 @@ const MoviesShows = () => {
                   </div>
                 </div>
                 <div className="bg-black-06 p-20px border border-black-15 rounded-md flex flex-col gap-5">
-                  <div className="commented-person flex items-center gap-32">
+                  <div className="commented-person flex items-center gap-5 flex-col md:flex-row md:justify-between">
                     <div className="detail">
                       <span className="text-white text-20px">Hamidov</span>
                       <p className="text-gray-60 text-18px">Uzbekistan</p>
@@ -107,7 +107,7 @@ const MoviesShows = () => {
                 </div>
               </div>
             </div>
-            <div className="release row-start-1 row-end-4 col-start-2 col-end-3  flex flex-col gap-8 bg-black-10 p-50px border rounded-md border-black-15">
+            <div className="release xl:row-start-1 xl:row-end-4 xl:col-start-2 xl:scol-end-3  flex flex-col gap-8 bg-black-10 p-50px border rounded-md border-black-15">
               <div className="release-year flex flex-col gap-5">
                 <div className="release-header flex items-center gap-5">
                   <ReleasedDate />
@@ -143,7 +143,7 @@ const MoviesShows = () => {
                   <Rate />
                   <span className="text-black-30">Rating</span>
                 </div>
-                <div className="flex justify-between items-center">
+                <div className="flex flex-col gap-5 md:justify-between md:flex-row md:items-center">
                   <div className="flex flex-col bg-black-08 border-black-15 rounded-md py-15px px-30px gap-2">
                     <span className="text-white text-20px">IMDb</span>
                     <div className="flex gap-2">

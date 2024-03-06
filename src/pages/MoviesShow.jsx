@@ -18,9 +18,9 @@ const MoviesShow = () => {
               </span>
             </div>
             <div className="our-genres flex flex-col mt-36px">
-              <div className="our-genres-header flex items-center justify-between">
+              <div className="our-genres-header flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                 <span className="text-white text-38px">Our Genres</span>
-                <div className="flex items-center gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
+                <div className="flex items-center justify-between gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
                   <button className="rounded-md p-4 bg-black-12">
                     <LeftArrow />
                   </button>
@@ -35,7 +35,7 @@ const MoviesShow = () => {
                   </button>
                 </div>
               </div>
-              <div className="our-genres-row flex items-center justify-between mt-10">
+              <div className="our-genres-row flex flex-col items-center sm:grid sm:grid-cols-2 gap-140px lg:flex lg:flex-row lg:items-center justify-between mt-10">
                 <CategoriesCard />
                 <CategoriesCard />
                 <CategoriesCard />
@@ -43,9 +43,9 @@ const MoviesShow = () => {
               </div>
             </div>
             <div className="our-genres flex flex-col mt-36px">
-              <div className="our-genres-header flex items-center justify-between">
+              <div className="our-genres-header flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                 <span className="text-white text-38px">Our Genres</span>
-                <div className="flex items-center gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
+                <div className="flex items-center justify-between gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
                   <button className="rounded-md p-4 bg-black-12">
                     <LeftArrow />
                   </button>
@@ -60,7 +60,7 @@ const MoviesShow = () => {
                   </button>
                 </div>
               </div>
-              <div className="our-genres-row flex items-center justify-between mt-10">
+              <div className="our-genres-row flex flex-col items-center sm:grid sm:grid-cols-2 gap-140px lg:flex lg:flex-row lg:items-center justify-between mt-10">
                 <CategoriesCard />
                 <CategoriesCard />
                 <CategoriesCard />
@@ -68,11 +68,11 @@ const MoviesShow = () => {
               </div>
             </div>
             <div className="top-ten-genres flex flex-col mt-36px">
-              <div className="top-ten-genres-header flex items-center justify-between">
+              <div className="top-ten-genres-header flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                 <span className="text-white text-38px">
                   Popular Top 10 In Genres
                 </span>
-                <div className="flex items-center gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
+                <div className="flex items-center justify-between gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
                   <button className="rounded-md p-4 bg-black-12">
                     <LeftArrow />
                   </button>
@@ -87,7 +87,7 @@ const MoviesShow = () => {
                   </button>
                 </div>
               </div>
-              <div className="top-ten-genres-row flex items-center justify-between mt-10">
+              <div className="top-ten-genres-row flex flex-col items-center sm:grid sm:grid-cols-2 gap-140px lg:flex lg:flex-row lg:items-center justify-between mt-10">
                 <CategoriesCard />
                 <CategoriesCard />
                 <CategoriesCard />
@@ -95,9 +95,9 @@ const MoviesShow = () => {
               </div>
             </div>
             <div className="trending-now flex flex-col mt-36px">
-              <div className="trending-now-header flex items-center justify-between">
+              <div className="trending-now-header flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                 <span className="text-white text-38px">Trending Now</span>
-                <div className="flex items-center gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
+                <div className="flex items-center justify-between gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
                   <button className="rounded-md p-4 bg-black-12">
                     <LeftArrow />
                   </button>
@@ -112,7 +112,7 @@ const MoviesShow = () => {
                   </button>
                 </div>
               </div>
-              <div className="trending-now-row flex items-center justify-between mt-10">
+              <div className="trending-now-row flex flex-col items-center sm:grid sm:grid-cols-2 gap-140px lg:flex lg:flex-row lg:items-center justify-between mt-10">
                 <CategoriesCard />
                 <CategoriesCard />
                 <CategoriesCard />
@@ -120,9 +120,9 @@ const MoviesShow = () => {
               </div>
             </div>
             <div className="new-releases flex flex-col mt-36px">
-              <div className="new-release-header flex items-center justify-between">
+              <div className="new-release-header flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                 <span className="text-white text-38px">New Releases</span>
-                <div className="flex items-center gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
+                <div className="flex items-center justify-between gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
                   <button className="rounded-md p-4 bg-black-12">
                     <LeftArrow />
                   </button>
@@ -137,7 +137,7 @@ const MoviesShow = () => {
                   </button>
                 </div>
               </div>
-              <div className="new-release-row flex items-center justify-between mt-10">
+              <div className="new-release-row flex flex-col items-center sm:grid sm:grid-cols-2 gap-140px lg:flex lg:flex-row lg:items-center justify-between mt-10">
                 <CategoriesCard />
                 <CategoriesCard />
                 <CategoriesCard />
@@ -145,11 +145,11 @@ const MoviesShow = () => {
               </div>
             </div>
             <div className="must-watch flex flex-col mt-36px">
-              <div className="must-watch-header flex items-center justify-between">
+              <div className="must-watch-header flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                 <span className="text-white text-38px">
                   Must - Watch Movies
                 </span>
-                <div className="flex items-center gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
+                <div className="flex items-center justify-between gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
                   <button className="rounded-md p-4 bg-black-12">
                     <LeftArrow />
                   </button>
@@ -164,7 +164,7 @@ const MoviesShow = () => {
                   </button>
                 </div>
               </div>
-              <div className="must-watch-row flex items-center justify-between mt-10">
+              <div className="must-watch-row flex flex-col items-center sm:grid sm:grid-cols-2 gap-140px lg:flex lg:flex-row lg:items-center justify-between mt-10">
                 <CategoriesCard />
                 <CategoriesCard />
                 <CategoriesCard />
@@ -179,9 +179,9 @@ const MoviesShow = () => {
               </span>
             </div>
             <div className="our-genres flex flex-col mt-36px">
-              <div className="our-genres-header flex items-center justify-between">
+              <div className="our-genres-header flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                 <span className="text-white text-38px">Our Genres</span>
-                <div className="flex items-center gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
+                <div className="flex items-center justify-between gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
                   <button className="rounded-md p-4 bg-black-12">
                     <LeftArrow />
                   </button>
@@ -196,7 +196,7 @@ const MoviesShow = () => {
                   </button>
                 </div>
               </div>
-              <div className="our-genres-row flex items-center justify-between mt-10">
+              <div className="our-genres-row flex flex-col items-center sm:grid sm:grid-cols-2 gap-140px lg:flex lg:flex-row lg:items-center justify-between mt-10">
                 <CategoriesCard />
                 <CategoriesCard />
                 <CategoriesCard />
@@ -204,9 +204,9 @@ const MoviesShow = () => {
               </div>
             </div>
             <div className="our-genres flex flex-col mt-36px">
-              <div className="our-genres-header flex items-center justify-between">
+              <div className="our-genres-header flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                 <span className="text-white text-38px">Our Genres</span>
-                <div className="flex items-center gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
+                <div className="flex items-center justify-between gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
                   <button className="rounded-md p-4 bg-black-12">
                     <LeftArrow />
                   </button>
@@ -221,7 +221,7 @@ const MoviesShow = () => {
                   </button>
                 </div>
               </div>
-              <div className="our-genres-row flex items-center justify-between mt-10">
+              <div className="our-genres-row flex flex-col items-center sm:grid sm:grid-cols-2 gap-140px lg:flex lg:flex-row lg:items-center justify-between mt-10">
                 <CategoriesCard />
                 <CategoriesCard />
                 <CategoriesCard />
@@ -229,11 +229,11 @@ const MoviesShow = () => {
               </div>
             </div>
             <div className="top-ten-genres flex flex-col mt-36px">
-              <div className="top-ten-genres-header flex items-center justify-between">
+              <div className="top-ten-genres-header flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                 <span className="text-white text-38px">
                   Popular Top 10 In Genres
                 </span>
-                <div className="flex items-center gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
+                <div className="flex items-center justify-between gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
                   <button className="rounded-md p-4 bg-black-12">
                     <LeftArrow />
                   </button>
@@ -248,7 +248,7 @@ const MoviesShow = () => {
                   </button>
                 </div>
               </div>
-              <div className="top-ten-genres-row flex items-center justify-between mt-10">
+              <div className="top-ten-genres-row flex flex-col items-center sm:grid sm:grid-cols-2 gap-140px lg:flex lg:flex-row lg:items-center justify-between mt-10">
                 <CategoriesCard />
                 <CategoriesCard />
                 <CategoriesCard />
@@ -256,9 +256,9 @@ const MoviesShow = () => {
               </div>
             </div>
             <div className="trending-now flex flex-col mt-36px">
-              <div className="trending-now-header flex items-center justify-between">
+              <div className="trending-now-header flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                 <span className="text-white text-38px">Trending Now</span>
-                <div className="flex items-center gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
+                <div className="flex items-center justify-between gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
                   <button className="rounded-md p-4 bg-black-12">
                     <LeftArrow />
                   </button>
@@ -273,7 +273,7 @@ const MoviesShow = () => {
                   </button>
                 </div>
               </div>
-              <div className="trending-now-row flex items-center justify-between mt-10">
+              <div className="trending-now-row flex flex-col items-center sm:grid sm:grid-cols-2 gap-140px lg:flex lg:flex-row lg:items-center justify-between mt-10">
                 <CategoriesCard />
                 <CategoriesCard />
                 <CategoriesCard />
@@ -281,9 +281,9 @@ const MoviesShow = () => {
               </div>
             </div>
             <div className="new-releases flex flex-col mt-36px">
-              <div className="new-release-header flex items-center justify-between">
+              <div className="new-release-header flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                 <span className="text-white text-38px">New Releases</span>
-                <div className="flex items-center gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
+                <div className="flex items-center justify-between gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
                   <button className="rounded-md p-4 bg-black-12">
                     <LeftArrow />
                   </button>
@@ -298,7 +298,7 @@ const MoviesShow = () => {
                   </button>
                 </div>
               </div>
-              <div className="new-release-row flex items-center justify-between mt-10">
+              <div className="new-release-row flex flex-col items-center sm:grid sm:grid-cols-2 gap-140px lg:flex lg:flex-row lg:items-center justify-between mt-10">
                 <CategoriesCard />
                 <CategoriesCard />
                 <CategoriesCard />
@@ -306,11 +306,11 @@ const MoviesShow = () => {
               </div>
             </div>
             <div className="must-watch flex flex-col mt-36px">
-              <div className="must-watch-header flex items-center justify-between">
+              <div className="must-watch-header flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
                 <span className="text-white text-38px">
                   Must - Watch Movies
                 </span>
-                <div className="flex items-center gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
+                <div className="flex items-center justify-between gap-4 border-4 border-black-12 rounded-md px-2 py-2 bg-black">
                   <button className="rounded-md p-4 bg-black-12">
                     <LeftArrow />
                   </button>
@@ -325,7 +325,7 @@ const MoviesShow = () => {
                   </button>
                 </div>
               </div>
-              <div className="must-watch-row flex items-center justify-between mt-10">
+              <div className="must-watch-row flex flex-col items-center sm:grid sm:grid-cols-2 gap-140px lg:flex lg:flex-row lg:items-center justify-between mt-10">
                 <CategoriesCard />
                 <CategoriesCard />
                 <CategoriesCard />
