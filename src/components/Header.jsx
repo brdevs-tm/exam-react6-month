@@ -138,7 +138,7 @@ const Header = () => {
         </nav>
       </div>
       <Routes>
-        <Route path="/showopen" element={<MoviesShow />} />
+        <Route path="/showopen" element={<MoviesOpen />} />
         <Route path="/support" element={<Support />} />
         <Route path="/subscriptions" element={<Subscription />} />
       </Routes>

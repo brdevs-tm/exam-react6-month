@@ -58,7 +58,7 @@ const MoviesShows = () => {
                   <span className="text-white text-18px">Add your review</span>
                 </button>
               </div>
-              <div className="reviews-row flex flex-col gap-5 xl:items-start xl:justify-between">
+              <div className="reviews-row flex flex-col gap-5 md:flex-row xl:items-start xl:justify-between">
                 <div className="bg-black-06 p-20px border border-black-15 rounded-md flex flex-col gap-5">
                   <div className="commented-person flex items-center gap-5 flex-col md:flex-row md:justify-between">
                     <div className="detail">
