@@ -1,15 +1,37 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import HomeMain from "../components/HomeMain";
 import { LeftArrow, RightArrow } from "../assets/Icons";
 import CategoriesCard from "../components/CategoriesCard";
 import StreamingDevice from "../components/StreamingDevice";
 import FAQ from "../components/FAQ";
 import PremiumPlan from "../components/PremiumPlan";
+import axios from "axios";
 
 const Home = () => {
   document.title = "Home";
+  const [movies, setMovies] = useState([]);
+  console.log(movies);
+  const fetchMovie = async () => {
+    try {
+      const response = await axios.get(
+        `https://api.themoviedb.org/3/genre/movie/list`,
+        {
+          params: {
+            api_key: `ad8856ac4bca472cc9cfbe3da6f2d56b`,
+          },
+        }
+      );
+      setMovies(response.data);
+    } catch (error) {
+      console.error(error.message);
+    }
+  };
+  useEffect(() => {
+    fetchMovie();
+  }, []);
   return (
     <Fragment>
+      {}
       <main className="overflow-hidden">
         <div className="flex">
           <HomeMain />
@@ -69,7 +91,7 @@ const Home = () => {
           </div>
         </div>
         <div className="frequently-asked-quests container mt-150px">
-          <div className="faq-header flex flex-col gap-5 md: flex-row md:justify-between">
+          <div className="faq-header flex flex-col gap-5 md:flex-row md:justify-between">
             <div className="flex flex-col gap-14px">
               <span className="text-white text-38px">
                 Frequently Asked Questions
